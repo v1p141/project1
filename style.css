@@ -1,0 +1,116 @@
+/* shift + q быстрый ввод тегов */
+
+
+span {
+    font-style: italic;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Верхняя навигационная панель */
+
+.nav-conteiner {
+    display: flex; /* Ровное расположение элементов вместе */
+    justify-content: space-between; /* развиг элементов максимально в лево и в право */
+    background-color: rgb(184, 184, 184); /* Цвет  навигационной панели */
+    
+}
+
+/* Обращаемся к тегу ul через  nav контейнер */
+
+.nav-conteiner>nav>ul {
+    display: flex; /* Выравнивание в одну строку */
+    list-style: none; /* Убрать точки у текста */
+    align-items: center; /* Выравнивание по центру(поисковую строку) */
+    margin: 0; /* Величина */
+    padding: 0;
+    
+
+}
+
+.nav-conteiner>nav>ul>li>a {
+    display: block;
+    padding: 10px; /* Размер */
+     /*  border-style: solid; Сплошная рамка */
+    border-width: 0,5px; /* Ширина */
+    color: rgb(51, 51, 51);
+}
+
+/* Подстройка для каждого устройства( с шириной экрана до 900 пикс) */
+
+@media (max-width: 900px) {
+    .nav-conteiner {
+        flex-direction: column; /* Сжимание в столбец */
+    }
+
+}
+
+/* Левая боковая нав панель */
+
+.text-page {
+    padding-left: 15px; /* Отступ */
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 14%;
+    background-color: rgb(184, 184, 184);
+}
+
+.section {
+    width: 82%;
+
+}
+
+.list-conteiner {
+    display: inline-block;
+    border-style: solid;
+    border-width: 0.5px;
+    padding-right: 20px;
+}
+
+.list-conteiner>p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.img-conteiner {
+    float: right;
+    border-style: solid;
+    border-width: 0.5px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.img-conteiner>div {
+    display: flex;
+    align-items: center; /*изображение по центру */
+    flex-direction: column; /*все изображение в столбец */
+}
+
+.logo-html {
+    max-width: 70px; /*максимальная ширина картинки */
+}
+
+.header>ol {
+    list-style: none; /*убираем нумерацию */
+    border-bottom-style: solid ; /*нижнее подчеркивание*/
+    border-width: 0.5px;
+    margin: 10px;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+.Logotip {
+    width: 100%; /*масштабируем ширину*/
+}
+
+.header>div>img {
+    width: 100%; /*отмасштабирует ширину по контейнеру*/
+}
